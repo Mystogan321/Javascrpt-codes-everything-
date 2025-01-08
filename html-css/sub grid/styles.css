@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: system-ui;
+  width: 90%;
+  margin-inline: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto, minmax(350px,1fr));
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.box {
+  border: 1px solid #ccc; /* Corrected from border-size to border */
+  border-radius: 6px;
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: 1 / 4;
+  /* grid-row: span auto; */
+}

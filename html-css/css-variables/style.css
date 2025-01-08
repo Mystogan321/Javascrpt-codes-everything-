@@ -1,0 +1,25 @@
+:root{
+  --clr-dark: rgb(0, 0, 0);
+  --clr-aqua: aqua;
+  --clr-white: rgb(141, 30, 117);
+  --clr-lb: lightblue;
+}
+.body {
+  background-color: var(--clr-dark);
+}
+
+/* Title color */
+.title {
+  color: var(--clr-aqua);
+}
+
+/* Description styling */
+.discription {
+  color: var(--clr-white);
+  font-size: 16px;
+}
+
+/* Link styling */
+.link {
+  color: var(--clr-aqua);
+}
